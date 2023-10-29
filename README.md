@@ -31,26 +31,26 @@ chmod u+x setup.sh
 For users who prefer a more hands-on approach, we provide a detailed step-by-step guide below:
 
 ### Step 1: Cloning the Repository
-Execute the following command to clone this project from the Github repository:<br>
+Execute the following command to clone this project from the Github repository:<br><br>
 ```git clone https://github.com/TheAnonymousCrusher/MyNeovimConfig```
 
 
 ### Step 2: Changing to the Project Directory
-Next, navigate to the directory into which the project has been cloned. You can do this by running the following command:<br>
+Next, navigate to the directory into which the project has been cloned. You can do this by running the following command:<br><br>
 ```cd MyNeovimConfig```
 
 
 ### Step 3: Modifying the Script Permissions
-After navigating to the correct directory, the next step is to modify the permissions of the .sh file to make it executable. This can be achieved by running the following command:<br>
+After navigating to the correct directory, the next step is to modify the permissions of the .sh file to make it executable. This can be achieved by running the following command:<br><br>
 ```chmod u+x setup.sh```
 
 ### Step 4: Running the Installation Script
-Finally, execute the installation script to begin the installation process. This can be done by running the following command:<br>
+Finally, execute the installation script to begin the installation process. This can be done by running the following command:<br><br>
 ```./setup.sh```
 
-Please note that these instructions assume you use a Unix-like operating system and a basic understanding of command-line operations. If you encounter any issues during the installation process, please refer to the documentation for further guidance.
-
 ## Prerequisites
+
+Please note that these instructions assume you use a Unix-like operating system and a basic understanding of command-line operations. If you encounter any issues during the installation process, please refer to the documentation for further guidance.
 
 Before proceeding with the installation, ensure that you have Git installed on your system. Git is a version control system that is essential for cloning and managing this repository.
 
@@ -106,7 +106,9 @@ sudo apk add git
 
 After installing Git, you can verify the installation by checking the Git version with the following command:
 
+```
 git --version
+```
 
 This command should return the installed version of Git. If Git is installed correctly, you can proceed with the installation of the Neovim configurations as described in the previous sections.
 
