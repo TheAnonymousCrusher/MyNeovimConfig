@@ -39,3 +39,5 @@ git clone $GH_REPO_URL $NVIM_CONFIG_PATH
 
 # Done
 echo -e "\n${blu}The nvim configuration has been successfully replaced with the one from the GitHub repository.${rst}"
+# Return to the directory the user was in before the installtion
+cd ..
