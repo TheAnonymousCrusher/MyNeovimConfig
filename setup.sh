@@ -30,11 +30,11 @@ mkdir -p ~/nvim_config_backup
 cp -r $NVIM_CONFIG_PATH/* ~/nvim_config_backup/
 
 # Delete the current nvim config folder
-echo -e "\n${org}Deleting the current nvim configuration...${rst}"
+echo -e "${org}Deleting the current nvim configuration...${rst}"
 rm -rf $NVIM_CONFIG_PATH
 
 # Clone the new configuration from the GitHub repository
-echo -e "\n${cyn}Cloning the new nvim configuration from $GH_REPO_URL...${rst}"
+echo -e "\n${cyn}Cloning the new nvim configuration from $GH_REPO_URL...${rst}\n"
 git clone $GH_REPO_URL $NVIM_CONFIG_PATH
 
 # Done
