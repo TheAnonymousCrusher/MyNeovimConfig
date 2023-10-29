@@ -16,39 +16,7 @@ Please note that these configurations are intended to be used as-is. However, if
 
 This section provides two methods for installing and setting up the Neovim configurations from this repository: a full installation via a single command, and a step-by-step installation process.
 
-## Full Installation in a Single Command
-
-For a quick and effortless setup, use the following command to clone the repository and automatically run the setup script:
-
-```sh
-git clone https://github.com/TheAnonymousCrusher/MyNeovimConfig.git
-cd MyNeovimConfig
-chmod u+x setup.sh
-./setup.sh
-```
-## Step-by-Step Installation
-
-For users who prefer a more hands-on approach, we provide a detailed step-by-step guide below:
-
-### Step 1: Cloning the Repository
-Execute the following command to clone this project from the Github repository:<br><br>
-```git clone https://github.com/TheAnonymousCrusher/MyNeovimConfig```
-
-
-### Step 2: Changing to the Project Directory
-Next, navigate to the directory into which the project has been cloned. You can do this by running the following command:<br><br>
-```cd MyNeovimConfig```
-
-
-### Step 3: Modifying the Script Permissions
-After navigating to the correct directory, the next step is to modify the permissions of the .sh file to make it executable. This can be achieved by running the following command:<br><br>
-```chmod u+x setup.sh```
-
-### Step 4: Running the Installation Script
-Finally, execute the installation script to begin the installation process. This can be done by running the following command:<br><br>
-```./setup.sh```
-
-## Prerequisites
+## Installation Prerequisites
 
 Please note that these instructions assume you use a Unix-like operating system and a basic understanding of command-line operations. If you encounter any issues during the installation process, please refer to the documentation for further guidance.
 
@@ -111,6 +79,39 @@ git --version
 ```
 
 This command should return the installed version of Git. If Git is installed correctly, you can proceed with the installation of the Neovim configurations as described in the previous sections.
+
+## Full Installation in a Single Command
+
+For a quick and effortless setup, use the following command to clone the repository and automatically run the setup script:
+
+```sh
+git clone https://github.com/TheAnonymousCrusher/MyNeovimConfig.git
+cd MyNeovimConfig
+chmod u+x setup.sh
+./setup.sh
+```
+## Step-by-Step Installation
+
+For users who prefer a more hands-on approach, we provide a detailed step-by-step guide below:
+
+### Step 1: Cloning the Repository
+Execute the following command to clone this project from the Github repository:<br><br>
+```git clone https://github.com/TheAnonymousCrusher/MyNeovimConfig```
+
+
+### Step 2: Changing to the Project Directory
+Next, navigate to the directory into which the project has been cloned. You can do this by running the following command:<br><br>
+```cd MyNeovimConfig```
+
+
+### Step 3: Modifying the Script Permissions
+After navigating to the correct directory, the next step is to modify the permissions of the .sh file to make it executable. This can be achieved by running the following command:<br><br>
+```chmod u+x setup.sh```
+
+### Step 4: Running the Installation Script
+Finally, execute the installation script to begin the installation process. This can be done by running the following command:<br><br>
+```./setup.sh```
+
 
 
 
@@ -258,22 +259,8 @@ In addition to commands provided by various plugins, I have also created some cu
 | `Edit`     | edit multiple files at the same time, supports globing                  | `Edit *.vim`                   |
 | `Datetime` | print current date and time or convert Unix time stamp to date and time | `Datetime 12345` or `Datetime` |
 
-# Contributing
+# Final Note
 
-If you find anything that needs improving, do not hesitate to point it out or create a PR.
+This project has been meticulously developed, and it would be greatly appreciated if you could express your support through a ❤️.<br> 
 
-If you come across an issue, you can first use `:checkhealth` command provided by `nvim` to trouble-shoot yourself.
-Please read carefully the messages provided by health check.
-
-If you still have an issue, [open a new issue](https://github.com/jdhao/nvim-config/issues).
-
-# Further readings
-
-Some of the resources that I find helpful in mastering Nvim is documented [here](docs/nvim_resources.md).
-You may also be interested in my posts on configuring Nvim:
-
-+ My nvim notes can be found [here](https://jdhao.github.io/categories/Nvim/)
-+ [Using Neovim for Three years](https://jdhao.github.io/2021/12/31/using_nvim_after_three_years/)
-+ [Config nvim on Linux for Python development](https://jdhao.github.io/2018/12/24/centos_nvim_install_use_guide_en/)
-+ [Nvim config on Windows 10](https://jdhao.github.io/2018/11/15/neovim_configuration_windows/)
-+ [Nvim-qt config on Windows 10](https://jdhao.github.io/2019/01/17/nvim_qt_settings_on_windows/)
+I sincerely hope that you have found the experience of using these Neovim configurations convenient and efficient. If you have any suggestions or feedback, feel free to reach out or contribute to the project. Your support is what drives the continuous improvement of these configurations. Thank you for your time and consideration.
