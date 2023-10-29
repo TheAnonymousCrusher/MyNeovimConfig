@@ -19,23 +19,23 @@ GH_REPO_URL="https://github.com/TheAnonymousCrusher/MyNeovimConfig.git"
 NVIM_CONFIG_PATH="$HOME/.config/nvim"
 
 # Warn the user about the upcoming action
-echo -e "${red}WARNING: The current nvim configuration folder will be overwritten."
+echo -e "\n${red}WARNING: The current nvim configuration folder will be overwritten."
 echo -e "${org}Please make sure to backup any important configuration files before proceeding."
 echo -e -n "${blu}Press any key to continue or Ctrl+C to cancel.${rst}"
 read -n 1 -s
 
 # Backup the current nvim config folder
-echo -e "\n${cyn}Backing up the current nvim configuration to ~/nvim_config_backup...${rst}"
+echo -e "\n\n${cyn}Backing up the current nvim configuration to ~/nvim_config_backup...${rst}"
 mkdir -p ~/nvim_config_backup
 cp -r $NVIM_CONFIG_PATH/* ~/nvim_config_backup/
 
 # Delete the current nvim config folder
-echo -e "${org}Deleting the current nvim configuration...${rst}"
+echo -e "\n${org}Deleting the current nvim configuration...${rst}"
 rm -rf $NVIM_CONFIG_PATH
 
 # Clone the new configuration from the GitHub repository
-echo -e "${cyn}Cloning the new nvim configuration from $GH_REPO_URL...${rst}"
+echo -e "\n${cyn}Cloning the new nvim configuration from $GH_REPO_URL...${rst}"
 git clone $GH_REPO_URL $NVIM_CONFIG_PATH
 
 # Done
-echo -e "${blu}The nvim configuration has been replaced with the one from the GitHub repository.${rst}"
+echo -e "\n${blu}The nvim configuration has been successfully replaced with the one from the GitHub repository.${rst}"
